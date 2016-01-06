@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+Player Name: <input type="text" id="name"><br>
+Scene: <select id="esc">
+{% for esc in escs %}
+    <option value="{{ esc.id }}">
+        {{ esc.name }}
+    </option>
+{% endfor %}
+</select><br>
+<button id="btn">Play!</button>
+<script>
+	$('#btn').click(function(){
+		window.location = "form/"+parseInt($("#esc").val())+"/"+$('#name').val()+"/"
+		//localhost:8000/form/1234/playername/
+	})
+</script>
+</body>
+</html>
