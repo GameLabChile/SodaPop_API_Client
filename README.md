@@ -2,12 +2,12 @@
 
 ## Modify:
 
-1. file ```iframe/templates/form.html```
-  + ```:1``` change ```action="https://[server]/api/newalone/"``` replacing **[server]** with the given server (posibly sp.gamelab.cl)
-
 2. file ```iframe/views.py```
-  + ```:12``` change ```teacher = "user given"```
-  + ```:16``` change ```private_key = rsa.PrivateKey( key given )```
+  + ```:9``` change ```teacher = "user given"```
+  + ```:10``` change ```url = "https://[server]/api/esc/?teacher="+teacher``` replacing [server] with given server
+  + ```:16``` change ```url = "https://[server]/api/newalone/"``` replacing [server] with given server
+  + ```:18``` change ```teacher = "user given"```
+  + ```:22``` change ```private_key = rsa.PrivateKey( key given )```
 
 ## Run:
 
