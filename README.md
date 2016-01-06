@@ -12,4 +12,4 @@
 ## Run:
 
 1. Run ```python manage.py runserver```
-2. Open ```localhost:8000/form/[esc]/[player name]/```
+2. Open ```localhost:8000```
