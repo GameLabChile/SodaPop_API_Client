@@ -24,6 +24,16 @@
 + it can't repeat
 
 ---
+### 'classid' : external id for posterior filter on [Get class list](https://github.com/GameLabChile/SodaPop_API_Client/blob/docs/get_class_list.md)
++ must be integer
++ optional parameter
+
+---
+### 'playerid' : external id to identify players
++ must be integer
++ optional parameter
+
+---
 ### 'sign' : sign to authenticate the request
 
 #### how to generate it?
