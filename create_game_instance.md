@@ -36,3 +36,14 @@
   + more documentation about base64: https://docs.python.org/2/library/base64.html
 
 ---
+
+## Output
+
+### on success
++ code: 302
++ header with Location redirect
+### on exception
++ code: 400, +message with posible cause
+
+### on fatal error
++ code: 500
