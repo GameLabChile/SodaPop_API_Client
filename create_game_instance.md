@@ -42,6 +42,7 @@
 ### on success
 + code: 302
 + header with Location redirect
+
 ### on exception
 + code: 400, +message with posible cause
 
