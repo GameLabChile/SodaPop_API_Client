@@ -27,7 +27,7 @@
 + 1) create a json with the variables (without sign variable)
 + 2) sort the keys alfabetically
 + 3) make an rsa signature with SHA-1 encoding of the json
-++ the private key is provided by Gamelab
-++ more documentation about rsa on python: https://stuvel.eu/files/python-rsa-doc/reference.html#rsa.PrivateKey
+  + the private key is provided by Gamelab
+  + more documentation about rsa on python: https://stuvel.eu/files/python-rsa-doc/reference.html#rsa.PrivateKey
 + 4) encode the signature in base64 with urlsafe
-++ more documentation about base64: https://docs.python.org/2/library/base64.html
+  + more documentation about base64: https://docs.python.org/2/library/base64.html
