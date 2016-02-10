@@ -1,6 +1,6 @@
 # Create game instance
 
-+ url: [server]/api/newalone/
++ url: `[server]/api/newalone/`
 + protocol: https
 + method: POST
 
