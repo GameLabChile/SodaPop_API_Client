@@ -44,7 +44,8 @@
 + header with Location redirect
 
 ### on exception
-+ code: 400, +message with posible cause
++ code: 400
++ content: posible cause
 
 ### on fatal error
 + code: 500
