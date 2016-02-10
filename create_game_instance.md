@@ -7,8 +7,6 @@
 ## Variables
 
 ### 'player' : name of the player to use in the game
-
-#### Constraints
 + accepts only letters uppercase & lowercase, numbers, underscore and dash. (regex: [a-zA-Z0-9 -])
 + use a reasonable length to prevent overflow in the interface
 
@@ -18,6 +16,7 @@
 ---
 ### 'esc' : the id of the scene(setting)
 + must be integer
++ provided in [Get scenes list](https://github.com/GameLabChile/SodaPop_API_Client/blob/docs/get_scenes_list.md)
 
 ---
 ### 'time' : unique time or number
