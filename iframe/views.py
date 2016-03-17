@@ -13,7 +13,7 @@ def index(request):
 	json_obj = json.loads(res)
 	return render(request, 'index.html', {'escs':json_obj})
 
-def form(request, esc, player, classid, playerid):
+def form(request, esc, player, classid, playerid, timeout):
 	
 	sign = ""
 	
@@ -25,8 +25,8 @@ def form(request, esc, player, classid, playerid):
 	timereq = int(time.time())
 	esc = int(esc)
 
-	data = {'teacher':teacher, 'player':player, 'time':timereq, 'esc':esc, 'playerid': int(playerid), 'classid':int(classid)}
+	data = {'teacher':teacher, 'player':player, 'time':timereq, 'esc':esc, 'playerid': int(playerid), 'classid':int(classid), 'timeout':int(timeout)}
 	firma = rsa.sign( json.dumps(data, sort_keys=True) , private_key, 'SHA-1' )
 	firma64 = base64.urlsafe_b64encode(firma)
 	print  json.dumps(data, sort_keys=True)
-	return render(request, 'form.html', {'sign':firma64, 'teacher':teacher, 'player':player, 'time':timereq, 'esc':esc, 'url':url, 'playerid':playerid, 'classid':classid})
+	return render(request, 'form.html', {'sign':firma64, 'teacher':teacher, 'player':player, 'time':timereq, 'esc':esc, 'url':url, 'playerid':playerid, 'classid':classid, 'timeout':timeout})
