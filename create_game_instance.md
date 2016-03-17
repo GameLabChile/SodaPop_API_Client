@@ -34,6 +34,13 @@
 + optional parameter
 
 ---
+### 'timeout' : time to live to the game instance
++ in seconds
++ must be integer
++ optional parameter
++ default value is 1209600(14 days)
+
+---
 ### 'sign' : sign to authenticate the request
 
 #### how to generate it?
