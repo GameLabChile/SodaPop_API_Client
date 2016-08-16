@@ -58,7 +58,7 @@
 
 ### on success
 + code: 302
-+ header with Location redirect
++ header with Location redirect ( example: Location {{server}}/game/index.html?dp=true&hash={{game instance hash code}} )
 
 ### on exception
 + code: 400
